@@ -20,9 +20,12 @@ driver = new ChromeDriver();
     @Test
     public void sdaTest(){
         driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
+        driver.manage().window().fullscreen();
+
         // toto mi najdede na str8nce prvek a napise jmeno
         driver.findElement(By.id("name")).sendKeys("Mir");
         driver.findElement(By.id("email")).sendKeys("jedi1");
+
     }
 
 
